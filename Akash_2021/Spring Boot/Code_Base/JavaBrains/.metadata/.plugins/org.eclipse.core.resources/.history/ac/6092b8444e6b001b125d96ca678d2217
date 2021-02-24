@@ -1,0 +1,14 @@
+package io.javabrains.springbootstarter.topic;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface TopicRepository {
+
+	// getAllTopics()
+	// getTopic(String id)
+	// updateTopic(Topic topic)
+	// deleteTopic(String id)
+	
+	CrudRepository<T, ID>
+
+}

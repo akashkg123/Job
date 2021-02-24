@@ -1,0 +1,21 @@
+package com.job.spring;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class DisplayNameBeanPostProcessor implements BeanPostProcessor{
+
+	@Override
+	public Object postProcessAfterInitialization(Object beanObject, String beanName) throws BeansException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object postProcessBeforeInitialization(Object beanObject, String beanName) throws BeansException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+ 

@@ -1,0 +1,31 @@
+package com.job.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DrawingApp {
+
+	private static ApplicationContext context;
+
+	public static void main(String[] args) {
+
+		context = new ClassPathXmlApplicationContext("spring.xml");
+		Triangle triangle = (Triangle) context.getBean("triangle1");
+		triangle.draw();
+
+		/*
+		 * Video 5
+		 * 
+		 * System.out.println("The type of this triangle is : " + triangle.getType());
+		 */
+
+		/*
+		 * Video 4
+		 * 
+		 * BeanFactory factory = new XmlBeanFactory(new
+		 * FileSystemResource("spring.xml")); Triangle triangle = (Triangle)
+		 * factory.getBean("triangle"); triangle.draw();
+		 */
+	}
+
+}

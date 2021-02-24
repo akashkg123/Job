@@ -1,0 +1,2 @@
+https://repo.spring.io/release/org/springframework/spring/
+https://commons.apache.org/proper/commons-logging/download_logging.cgi

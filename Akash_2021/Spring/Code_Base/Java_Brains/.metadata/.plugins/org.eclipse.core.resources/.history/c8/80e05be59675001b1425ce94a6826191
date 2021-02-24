@@ -1,0 +1,20 @@
+package com.job.spring;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class DisplayNameBeanPostProcessor implements BeanPostProcessor {
+
+	@Override
+	public Object postProcessAfterInitialization(Object beanObject, String beanName) throws BeansException {
+		System.out.println("BeanPostProcessor- postProcessBeforeInitialization beanName : " + beanName);
+		return null;
+	}
+
+	@Override
+	public Object postProcessBeforeInitialization(Object beanObject, String beanName) throws BeansException {
+		System.out.println("BeanPostProcessor- postProcessBeforeInitialization beanName : " + beanName);
+		return null;
+	}
+
+}

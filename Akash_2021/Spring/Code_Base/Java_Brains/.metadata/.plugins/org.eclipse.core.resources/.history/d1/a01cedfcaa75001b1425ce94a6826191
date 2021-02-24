@@ -1,0 +1,5 @@
+package com.job.spring;
+
+public class MyBeanPostProccessor {
+
+}

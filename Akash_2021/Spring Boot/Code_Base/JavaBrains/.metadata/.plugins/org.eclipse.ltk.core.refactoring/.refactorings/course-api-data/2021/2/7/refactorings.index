@@ -1,0 +1,11 @@
+1612926289450	Rename package 'com.example.demo'
+1612940801514	Copy package
+1612940834044	Rename type 'Topic'
+1612940855767	Rename type 'TopicController'
+1612940873444	Rename type 'TopicRepository'
+1612940890501	Rename type 'TopicService'
+1612941054386	Rename field 'topicService'
+1612941086369	Rename field 'topicRepository'
+1612941125516	Rename local variable 'topics'
+1612942414979	Rename method 'deleteTopic'
+1612947757423	Delete element

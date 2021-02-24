@@ -1,0 +1,30 @@
+package com.job.spring;
+
+public class Circle implements Shape {
+
+	public Circle() {
+
+	}
+
+	public Circle(Point center) {
+		this.center = center;
+
+	}
+
+	private Point center;
+
+	public Point getPoint() {
+		return center;
+	}
+
+	public void setPoint(Point center) {
+		this.center = center;
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("I am circle!");
+
+	}
+
+}

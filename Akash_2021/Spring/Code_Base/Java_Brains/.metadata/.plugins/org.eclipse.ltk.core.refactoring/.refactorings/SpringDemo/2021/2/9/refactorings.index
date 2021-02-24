@@ -1,0 +1,6 @@
+1614051751068	Convert local variable 'context' to field
+1614057364447	Rename type 'BeanPostProcessor'
+1614066328904	Rename type 'MyBeanPostProccessor'
+1614066339737	Rename type 'DisplayNameBeanPostProcessor'
+1614067683618	Move file
+1614070389487	Rename field 'point'
