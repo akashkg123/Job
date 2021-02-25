@@ -1,6 +1,7 @@
 package com.job.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
 
 public class Circle implements Shape {
@@ -22,6 +23,7 @@ public class Circle implements Shape {
 
 	@Required
 	@Autowired
+	@Qualifier("center")
 	public void setCenter(Point center) {
 		this.center = center;
 	}
@@ -29,6 +31,7 @@ public class Circle implements Shape {
 	@Override
 	public void draw() {
 		System.out.println("I am circle!");
+		System.out.println("pointA: x*y = " + (getCenter().getX() * getCenter().getY()));
 
 	}
 

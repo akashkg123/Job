@@ -1,0 +1,32 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean id="circle" class="com.job.spring.Circle">
+	</bean>
+
+
+	<bean id="center" class="com.job.spring.Point">
+		<property name="x" value="12" />
+		<property name="y" value="24" />
+	</bean>
+
+
+
+	<bean class="com.job.spring.MyBeanFactoryPostProccessor">
+	</bean>
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="pointsconfig.properties"></property>
+	</bean>
+
+	<bean
+		class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor">
+	</bean>
+	
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor">
+	</bean>
+
+</beans>
